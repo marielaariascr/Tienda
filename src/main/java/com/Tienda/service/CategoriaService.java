@@ -4,15 +4,19 @@ import com.Tienda.domain.Categoria;
 import java.util.List;
 
 public interface CategoriaService {
-    //retorna una lista de categorias (activas o todas)
+   
+    // Retorna una lista de categorias (activas o todas)
     public List<Categoria> getCategorias(boolean activos);
-    
-    //retorna una categoria por ID
+   
+   // Retorna una categoría por ID
     public Categoria getCategoria(Categoria categoria);
-    
-    //se inserta un nuevo registro si el ID de la categoria esta vacio
-    //se actualiza el registro si el ID de la categoria no esta vacio.
+   
+    // Se inserta un nuevo registro si el ID de la categoría está vacío
+    // Se actualiza el registro si el ID de la categoría NO está vacío
     public void save(Categoria categoria);
-    
+   
+    // Se elimina el categoria que tiene el id pasado por parámetro
     public void delete(Categoria categoria);
+   
+    public List<Categoria> getCategoriasPorDescripcion(String descripcion);
 }
