@@ -38,7 +38,6 @@ body {
     line-height: 90px;
 }
 
-
 .nav-menu{
     display: flex;
     margin-right: 40px;
@@ -58,7 +57,7 @@ body {
 }
 
 .nav-menu-link:hover{
-    background-color: cyan;
-    transition: 0.7s;
+    background-color: lightblue;
+    transition: 0.2s;
 }
 
